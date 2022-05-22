@@ -4,7 +4,7 @@ const Banner = () => {
     return (
        
             <div>
-                <div class="carousel carousel-end rounded-box">
+                <div class="carousel carousel-end mx-8 my-12 rounded-box">
   <div class="carousel-item">
     <img src={'https://i.ibb.co/jMZyCX0/istockphoto-516240596-170667a.jpg'} alt="Drink" />
   </div> 

@@ -11,7 +11,7 @@ const Tools = () => {
     return (
         <div>
            
-            <div className='grid my-5  mx-8 md:grid-cols-2 sm:grid-cols-1  lg:grid-cols-3 gap-4'>
+            <div className='grid my-5 my-24  mx-8 md:grid-cols-2 sm:grid-cols-1  lg:grid-cols-3 gap-4'>
             {
                 tools.map(tool=> <SingleTools
                 key={tool._id}
