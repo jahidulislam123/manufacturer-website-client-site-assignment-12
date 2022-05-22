@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Bike Headsets",
+        "price": 39,
+        "img": "https://i.ibb.co/MPg7FtC/cassettes.webp",
+        "description": "The bike headset is a set of components on a bike that create a rotatable interface between the bicycle fork and the head tube of a bicycle frame. Basically it allows the smooth turning of your handlebars. Headsets feature bearings and can need maintenance or replacing down the road to keep your bike running smoothly.",
+        "minimumOrderQuantity": 5,
+        "available": 43
+    },
+    {
+        "id": 2,
+        "name": "Bike Cassettes & Freewheels",
+        "price": 49,
+        "img": "https://i.ibb.co/Z82jYZV/headsets.webp",
+        "description": "Mountain, road, and gravel riders all rely on the cassette to help them climb on the steeps, and sprint on the flats. Replacing your bike cassette can revive your shifting to a smooth, brand new feel. When replacing your cassette we recommend replacing your chain and chainrings.",
+        "minimumOrderQuantity": 4,
+        "available": 65
+    },
+    {
+        "id": 3,
+        "name": "Handlebars",
+        "price": 59,
+        "img": "https://i.ibb.co/Z66pS2v/bike-brake-levers-1ddc2439-b13f-477c-9b17-ac76948fcae4.webp",
+        "description": "All cyclists can improve their ride with a bike handlebar upgrade. Find lightweight, durable, and ergonomic options to make your bike fit you better. From aerodynamic carbon drop bars to bomb proof mountain bike risers, customize your bike and feel the freedom!",
+        "minimumOrderQuantity": 12,
+        "available": 54
+    },
+    {
+        "id": 4,
+        "name": "Quill Bike Stems",
+        "price": 19,
+        "img": "https://i.ibb.co/bP0QG9M/quill-stems.webp",
+        "description": "The perfect solution for a classic look, or to just get that vintage bike fitting proper. Who doesn't want comfort and style?",
+        "minimumOrderQuantity": 12,
+        "available": 12
+    },
+    {
+        "id": 5,
+        "name": "Bike Derailleurs",
+        "price": 99,
+        "img": "https://i.ibb.co/86BbWHy/derailleur.webp",
+        "description": "Upgrading your derailleur can improve shifting, eliminate dropped chains, and give you a better time out on two wheels. Don't let poor shifting slow you down on your rides.",
+        "minimumOrderQuantity": 16,
+        "available": 4
+    },
+    {
+        "id": 6,
+        "name": "Bicycle Seatposts",
+        "price": 89,
+        "img": "https://i.ibb.co/2kMyd3R/seatposts.webp",
+        "description": "Seatposts are another great way to dial in your bike to fit your exact body shape and riding style. When the bike feels better, you ride better! Riding road? Go for a carbon fiber seatpost to dampen the vibrations. Riding mountain? Grab that dropper seatpost and push your riding to the next level!",
+        "minimumOrderQuantity": 23,
+        "available": 54
+    }
+]
