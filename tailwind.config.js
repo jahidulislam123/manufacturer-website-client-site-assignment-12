@@ -7,7 +7,7 @@ module.exports = {
     themes: [
       {
         bycletheme: {
-          primary: "crimson",
+          primary: "#73933b",
           secondary: "#f6d860",
           accent: "#37cdbe",
           neutral: "#3d4451",
