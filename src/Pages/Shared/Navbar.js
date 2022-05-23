@@ -11,7 +11,8 @@ const Navbar = () => {
     signOut(auth);
   }
     const menuItem = <>
-        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/'></Link></li>
+        <li><Link to='/home'>Home</Link></li>
         <li><Link to='/appoinment'>Appoinment</Link></li>
         <li><Link to='/reveiw'>Review</Link></li>
         <li><Link to='/contact'>Contact</Link></li>

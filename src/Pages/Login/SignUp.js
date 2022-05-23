@@ -34,12 +34,14 @@ const onSubmit = async(data) => {
     await createUserWithEmailAndPassword(data.email,data.password);
     await updateProfile({ displayName:data.name });
     console.log('update done');
-    navigate('/');
+    navigate('/home');
 }
 
 
     if(user||gUser){
-        console.log(user||gUser);
+        // console.log(user||gUser);
+        navigate('/home');
+
     }
     return (
         <div className='flex h-screen justify-center items-center'>

@@ -27,7 +27,7 @@ const Purchase = ({parts,setParts}) => {
             amount:quantity
  
         }
-        fetch('http://localhost:5000/booking',{
+        fetch('https://radiant-temple-88405.herokuapp.com/booking',{
             method :'POST',
             headers: {
                 'content-type':'application/json'
@@ -36,8 +36,10 @@ const Purchase = ({parts,setParts}) => {
         })
         .then(res=>res.json())
         .then(data=>{
-            setParts(null);
+           
         })
+        toast.success('You have booked successfully');
+        setParts(null);
        
         
      }
