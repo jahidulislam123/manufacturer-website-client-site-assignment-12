@@ -1,7 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import Purchase from './Purchase';
 import SingleTools from './SingleTools';
 
 const Tools = () => {
+ //
+const [parts,setParts]=useState(null);
+
+ //
+
+
     const [tools,setTools]=useState([]);
     useEffect(()=>{
         fetch('https://radiant-temple-88405.herokuapp.com/tools')
@@ -16,9 +23,13 @@ const Tools = () => {
                 tools.map(tool=> <SingleTools
                 key={tool._id}
                 tool={tool}
+                setParts={setParts}
                 ></SingleTools> )
             }
             </div>
+            {
+                parts && <Purchase parts={parts} ></Purchase>
+            }
         </div>
     );
 };

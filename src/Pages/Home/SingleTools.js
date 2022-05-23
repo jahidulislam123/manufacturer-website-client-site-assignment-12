@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SingleTools = ({tool}) => {
+const SingleTools = ({tool,setParts}) => {
     const {name,img,minimumOrderQuantity,price,available,description}=tool;
     const details =description.slice(0,50);
     return (
@@ -14,7 +14,10 @@ const SingleTools = ({tool}) => {
     <p>mininimum order: ${minimumOrderQuantity}</p>
     <p>{details}</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Book</button>
+     
+      <label for="purchase-modal" 
+      onClick={()=>setParts(tool)}
+      class="btn btn-primary text-white uppercase">Book Now</label>
     </div>
   </div>
 </div>
