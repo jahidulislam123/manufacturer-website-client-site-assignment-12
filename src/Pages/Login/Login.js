@@ -3,6 +3,7 @@ import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-fireba
 import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -16,8 +17,14 @@ const Login = () => {
         error,
       ] = useSignInWithEmailAndPassword(auth);
 
+
+      let signInErrorMessage ;
       if(loading||gLoading){
          return <Loading></Loading>
+      }
+      if(error||gError){
+        signInErrorMessage = <p className='text-red-500'><small>{error?.message||gUser?.message}</small></p>
+
       }
 
 const onSubmit = data => {
@@ -26,8 +33,8 @@ const onSubmit = data => {
 }
 
 
-    if(gUser){
-        console.log('user',gUser);
+    if(user||gUser){
+        console.log(user||gUser);
     }
     return (
         <div className='flex h-screen justify-center items-center'>
@@ -90,11 +97,11 @@ const onSubmit = data => {
 </div>
 
 
-      
+      {signInErrorMessage}
       <input className='btn w-full text-white max-w-xs btn-active btn-accent font-bold' value='Login' type="submit" />
     </form>
 
-
+    <p><small>New to Bycle Parts <Link className='text-blue-800 font-bold' to="/signup"> Create new account</Link></small></p>
     <div className="divider">OR</div>
     <button onClick={()=>signInWithGoogle()}
      className="btn btn-outline btn-accent"
