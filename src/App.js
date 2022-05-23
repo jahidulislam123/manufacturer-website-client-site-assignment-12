@@ -7,6 +7,8 @@ import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/Login/SignUp';
 import NotFound from './Pages/Shared/NotFound';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
      </Routes> 
     
      <Footer></Footer>
+     <ToastContainer />
     </div>
   );
 }

@@ -28,7 +28,9 @@ const [parts,setParts]=useState(null);
             }
             </div>
             {
-                parts && <Purchase parts={parts} ></Purchase>
+                parts && <Purchase parts={parts}
+                setParts={setParts}
+                ></Purchase>
             }
         </div>
     );

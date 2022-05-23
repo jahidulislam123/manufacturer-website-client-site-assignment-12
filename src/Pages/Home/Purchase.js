@@ -1,7 +1,49 @@
+import { UserCircleIcon } from '@heroicons/react/solid';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast } from 'react-toastify';
+import auth from '../../firebase.init';
 
-const Purchase = ({parts}) => {
-    const {name}=parts;
+const Purchase = ({parts,setParts}) => {
+    const {_id,name,minimumOrderQuantity,available}=parts;
+    const [user, loading, error] = useAuthState(auth);
+   console.log(user);
+
+
+   const handleBooking =event =>{
+       event.preventDefault();
+       const quantity =event.target.quantity.value;
+       if(quantity<minimumOrderQuantity || quantity>available){
+           toast('please take a number among minimum quantity and avalable quantity');
+       }
+     else{
+        const booking=  {
+            toolsId :_id,
+            toolsName: name,
+            email: user.email,
+            personName:user.displayName,
+            phone:event.target.phone.value,
+            address:event.target.address.value,
+            amount:quantity
+ 
+        }
+        fetch('http://localhost:5000/booking',{
+            method :'POST',
+            headers: {
+                'content-type':'application/json'
+            },
+            body:JSON.stringify(booking)
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            setParts(null);
+        })
+       
+        
+     }
+   }
+
+
     return (
         <div>
             
@@ -10,11 +52,16 @@ const Purchase = ({parts}) => {
 <div class="modal modal-bottom sm:modal-middle">
   <div class="modal-box">
   <label for="purchase-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-    <h3 class="font-bold text-lg text-primary">{name}</h3>
-    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
-    <div class="modal-action">
-      <label for="purchase-modal" class="btn">Yay!</label>
-    </div>
+    <h3 class="font-bold text-lg text-primary">Tool's Name: {name}</h3>
+    <form  onSubmit={handleBooking} className='grid grid-cols-span-1 gap-3 mt-2 justify-items-center'>
+    <input type="text"  disabled value={name} placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+    <input type="text"name='email'  disabled value={user?.email || ''} placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+    <input type="text"name='name' disabled value={user?.displayName || ''} placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+    <input type="number" name='phone' placeholder="Phone Number" class="input input-bordered w-full max-w-xs" />
+    <input type="text" name='address' placeholder="address" class="input input-bordered w-full max-w-xs" />
+    <input type="number" name='quantity'  placeholder={minimumOrderQuantity} class="input input-bordered w-full max-w-xs" />
+    <input type="submit" value='submit' placeholder="Type here" class="btn btn-primary font-bold text-white w-full max-w-xs" />
+    </form>
   </div>
 </div>
             
