@@ -18,7 +18,13 @@ const AddedReview = () => {
                 {
                     review.map(a=>
                         <div class="card  bg-base-100 shadow-xl">
-                        <figure><img src={a.img}alt="Shoes" /></figure>
+                        
+                        <figure>
+                          <div  class="w-24  mask mask-squircle">
+                          <img src={a.img}alt="Shoes" />
+                          </div></figure>
+                          
+                          
                         <div class="card-body">
                           <h2 class="card-title">
                             Ratings
