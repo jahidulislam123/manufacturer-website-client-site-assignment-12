@@ -7,7 +7,7 @@ const ExtraOne = () => {
     return (
         <div className='grid justify-center items-center  lg:grid-cols-4   gap-3 mx-6 my-8'>
             <div class="h-96  carousel carousel-vertical rounded-box">
-  <div class="carousel-item grid   h-full">
+  <div class="carousel-item    h-full">
     <img src=" https://i.ibb.co/vztTjjV/golden-hour-biking-2380937.jpg" />
   </div> 
   <div class="carousel-item h-full">
