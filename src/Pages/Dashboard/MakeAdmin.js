@@ -5,7 +5,7 @@ import AdminRow from './AdminRow';
 
 const MakeAdmin = () => {
 
-    const {data:users,isLoading } = useQuery('users',()=>fetch('http://localhost:5000/user').then(res=>res.json()))
+    const {data:users,isLoading } = useQuery('users',()=>fetch('https://radiant-temple-88405.herokuapp.com/user').then(res=>res.json()))
 
     if(isLoading){
         return <Loading></Loading>
