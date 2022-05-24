@@ -13,11 +13,13 @@ const Navbar = () => {
     const menuItem = <>
         <li><Link to='/'></Link></li>
         <li><Link to='/home'>Home</Link></li>
-        <li><Link to='/appoinment'>Appoinment</Link></li>
-        <li><Link to='/reveiw'>Review</Link></li>
         <li><Link to='/contact'>Contact</Link></li>
         <li><Link to='/about'>About</Link></li>
         <li><Link to='/blogs'>Blogs</Link></li>
+        {
+          user &&         <li><Link to='/dashboard'>Dashboard</Link></li>
+
+        }
         <li>{ user? <button onClick={logout} class="btn btn-ghost">SignOut</button> :<Link to='/login'>Login</Link>}</li>
        
     
@@ -28,7 +30,6 @@ const Navbar = () => {
     <div className="dropdown">
       <label tabindex="0" className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-        {/* <img src={logo} alt="" /> */}
       </label>
       <ul tabindex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
        {menuItem}
@@ -45,7 +46,10 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn mr-7 font-bold text-white btn-primary">Get started</a>
+  <label for="dashboardSidebar" tabindex="1" className="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </label>
+
   </div>
 </div>
     );

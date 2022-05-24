@@ -128,7 +128,7 @@ const onSubmit = async(data) => {
       <input className='btn w-full text-white max-w-xs btn-active btn-accent font-bold' value='Sign Up' type="submit" />
     </form>
 
-    <p><small>Already have an account? <Link className='text-blue-800 font-bold' to="/signup">Please Login</Link></small></p>
+    <p><small>Already have an account? <Link className='text-blue-800 font-bold' to="/login">Please Login</Link></small></p>
     <div className="divider">OR</div>
     <button onClick={()=>signInWithGoogle()}
      className="btn btn-outline btn-accent"
