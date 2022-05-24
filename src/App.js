@@ -16,6 +16,7 @@ import Blogs from './Pages/Blogs/Blogs';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrder from './Pages/Dashboard/MyOrder';
 import AddReview from './Pages/Dashboard/AddReview';
+import MakeAdmin from './Pages/Dashboard/MakeAdmin';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <Route path='/dashboard' element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>
     <Route index element={<MyOrder></MyOrder>}></Route>
     <Route path='addreview' element={<AddReview></AddReview>}></Route>
+    <Route path='makeadmin' element={<MakeAdmin></MakeAdmin>}></Route>
 
       </Route>
       <Route path='/*' element={<NotFound></NotFound>}></Route>
