@@ -4,8 +4,6 @@ const ExtraOne = () => {
    
 
 
-
-
     return (
         <div className='grid justify-center items-center  lg:grid-cols-4   gap-3 mx-6 my-8'>
             <div class="h-96  carousel carousel-vertical rounded-box">
