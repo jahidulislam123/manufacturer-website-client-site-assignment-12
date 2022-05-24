@@ -4,6 +4,7 @@ import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
 import { Link, useNavigate } from 'react-router-dom';
+import useToken from '../../Hooks/useToken';
 
 const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -16,7 +17,7 @@ const Login = () => {
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
-
+       const [token] =useToken(user || gUser)
 
       let signInErrorMessage ;
       if(loading||gLoading){
@@ -33,7 +34,7 @@ const onSubmit = data => {
 }
 
 
-    if(user||gUser){
+    if(token){
         // console.log(user||gUser);
         
         navigate('/home')
