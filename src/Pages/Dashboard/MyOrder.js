@@ -8,7 +8,7 @@ const MyOrder = () => {
     const [user]=useAuthState(auth);
     useEffect(()=>{
       if(user){
-        fetch(`http://localhost:5000/booking?email=${user.email}`)
+        fetch(`https://radiant-temple-88405.herokuapp.com/booking?email=${user.email}`)
         .then(res=>res.json())
         .then(data=>{
             setOrder(data)
@@ -22,7 +22,7 @@ const MyOrder = () => {
     const handleDelete =id=>{
         const procced=window.confirm('Are you sure you want to delete ?');
         if(procced){
-            const url =`http://localhost:5000/booking?amount=${id}`
+            const url =`https://radiant-temple-88405.herokuapp.com/booking?amount=${id}`
             fetch(url,{
                 method : 'DELETE',
                 'content-type':'application/json'
