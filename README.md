@@ -1,6 +1,14 @@
 # Getting Started with Create React App
 
 ## live site : https://bicycle-parts-f992b.web.app/
+* There are number of things i have used here 
+* i used tailwind
+* daisy ui
+* react form hook
+* react query 
+* node js
+* mongodb
+* express js 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

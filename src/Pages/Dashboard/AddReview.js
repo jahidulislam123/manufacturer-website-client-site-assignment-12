@@ -46,10 +46,10 @@ const AddReview = () => {
         <div className='text-black'>
             <h3 className='text-3xl    font-bold text-black'>Please Add a Review !!</h3>
             <form className='flex m-12 rounded-box  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex-col p-24  justify-center items-center' onSubmit={handlesubmit}>
-            <input type="number" name='ami' placeholder="Type here" class="input input-bordered input-primary my-2 w-full max-w-xs" />
-            <input type="text" name='textall' placeholder="Type here" class="input my-2 input-bordered input-primary w-full max-w-xs" />
+            <input type="number" name='ami' placeholder="Please give rating among 1-5" class="input input-bordered input-primary my-2 w-full max-w-xs" />
+            <input type="text" name='textall' placeholder="write something about our services" class="input my-2 input-bordered input-primary w-full max-w-xs" />
             
-            <input type="submit" value='submit'  class="btn btn-black text-white my-2 font-bold w-full max-w-xs" />
+            <input type="submit" value='Post'  class="btn btn-black text-white my-2 font-bold w-full max-w-xs" />
             </form>
         </div>
     );
