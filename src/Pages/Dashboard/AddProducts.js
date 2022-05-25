@@ -23,7 +23,7 @@ const AddProducts = () => {
 
 
         }
-        fetch('http://localhost:5000/tools',{
+        fetch('https://radiant-temple-88405.herokuapp.com/tools',{
                 method :'POST',
                 headers: {
                     'content-type':'application/json'

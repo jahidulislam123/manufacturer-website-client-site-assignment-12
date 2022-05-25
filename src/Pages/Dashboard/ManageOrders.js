@@ -5,7 +5,7 @@ import ManageOrderDelete from './ManageOrderDelete';
 const ManageOrders = () => {
     const [allorders,setAllorders]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/bookingss')
+        fetch('https://radiant-temple-88405.herokuapp.com/bookingss')
         .then(res=>res.json())
         .then(data=>setAllorders(data));
     },[])
