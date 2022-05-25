@@ -16,6 +16,7 @@ const Home = () => {
             <ExtraOne></ExtraOne>
             <Line></Line>
             <h2>this is home page</h2>
+            
         </div>
     );
 };

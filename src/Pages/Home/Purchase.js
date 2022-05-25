@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 
 const Purchase = ({parts,setParts}) => {
-    const {_id,name,minimumOrderQuantity,available}=parts;
+    const {_id,name,minimumOrderQuantity,available,price}=parts;
     const [user, loading, error] = useAuthState(auth);
    console.log(user);
 
@@ -24,7 +24,8 @@ const Purchase = ({parts,setParts}) => {
             personName:user.displayName,
             phone:event.target.phone.value,
             address:event.target.address.value,
-            amount:quantity
+            amount:quantity,
+            price :price
  
         }
         fetch('https://radiant-temple-88405.herokuapp.com/booking',{
