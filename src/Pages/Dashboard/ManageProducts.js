@@ -14,7 +14,7 @@ const ManageProducts = () => {
     const handleDelete=(id)=>{
         const procced=window.confirm('Are you sure you want to delete ?');
         if(procced){
-            const url =`http://localhost:5000/deleted?amount=${id}`
+            const url =`https://radiant-temple-88405.herokuapp.com/deleted?amount=${id}`
             fetch(url,{
                 method : 'DELETE',
                 'content-type':'application/json'
