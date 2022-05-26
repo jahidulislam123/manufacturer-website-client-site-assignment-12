@@ -10,8 +10,8 @@ const SingleTools = ({tool,setParts}) => {
   <div className="card-body">
     <h2 className="card-title">{name}</h2>
     <p>Price: ${price}</p>
-    <p>available: ${available}</p>
     <p>mininimum order: ${minimumOrderQuantity}</p>
+    <p>available: ${available}</p>
     <p>{details}</p>
     <div className="card-actions justify-end">
      

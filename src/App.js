@@ -9,7 +9,6 @@ import SignUp from './Pages/Login/SignUp';
 import NotFound from './Pages/Shared/NotFound';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
-import About from './Pages/Home/About';
 import RequireAuth from './Pages/Login/RequireAuth';
 // import Tools from './Pages/Home/Tools';
 import Blogs from './Pages/Blogs/Blogs';
@@ -23,6 +22,7 @@ import ManageOrders from './Pages/Dashboard/ManageOrders';
 import ManageProducts from './Pages/Dashboard/ManageProducts';
 import Payment from './Pages/Dashboard/Payment';
 import MyProfile from './Pages/Dashboard/MyProfile';
+import Portfolio from './Pages/Portfolio/Portfolio';
 
 function App() {
   return (
@@ -34,7 +34,7 @@ function App() {
       <Route path='/login' element={<Login></Login>}></Route>
       <Route path='/signup' element={<SignUp></SignUp>}></Route>
       <Route path='/blogs' element={<Blogs></Blogs>}></Route>
-      <Route path='/about' element={<RequireAuth><About></About></RequireAuth>}></Route>
+      <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
       <Route path='/dashboard' element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>
        <Route index element={<MyOrder></MyOrder>}></Route>
        <Route path='addreview' element={<AddReview></AddReview>}></Route>
