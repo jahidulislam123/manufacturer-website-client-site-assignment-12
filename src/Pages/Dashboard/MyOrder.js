@@ -81,8 +81,21 @@ const MyOrder = () => {
                 <td>{order.toolsName}</td>
                 <td>{order.amount}</td>
                 <td>{order.phone}</td>
-                <td><Link to={`/dashboard/payment/${order._id}`}><button class="btn btn-xs">Pay</button></Link></td>
-                <td><button onClick={()=>handleDelete(order._id)} class="btn btn-xs">Cancel</button></td>
+                <td>
+                  
+                  {(order.price && !order.paid)&&
+                  <Link to={`/dashboard/payment/${order._id}`}><button class="btn font-bold btn-xs">pay</button></Link>}
+                  {(order.price && order.paid)&&
+                  <div><Link to={`/dashboard/payment/${order._id}`}><button class="btn btn-primary text-white font-bold  btn-xs">paid</button></Link>
+                  <p>TransactionId: <br /> <span className='text-orange-500 font-bold'> {order.transaction}</span> </p>
+                  </div>
+
+                  }
+                  
+                  </td>
+                <td>
+                  {!order.paid &&  <button onClick={()=>handleDelete(order._id)} class="btn disabled font-bold btn-xs">Cancel</button>}
+                  </td>
               </tr>)
         }
      

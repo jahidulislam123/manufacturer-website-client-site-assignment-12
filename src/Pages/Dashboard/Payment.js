@@ -10,7 +10,7 @@ const stripePromise = loadStripe('pk_test_51L1kgHIutvL6hPmOX0xnV52Ucuwu0MgvnDhsk
 
 const Payment = () => {
     const {id}=useParams()
-    const url = `http://localhost:5000/booking/${id}`
+    const url = `https://radiant-temple-88405.herokuapp.com/booking/${id}`
     const {data:order ,isLoading}=useQuery(['booking',id],()=>fetch(url,{
         method :'GET',
         headers:{
@@ -36,7 +36,7 @@ const Payment = () => {
       <div class="card-body">
         
       <Elements stripe={stripePromise}>
-      <CheckoutForm />
+      <CheckoutForm order={order} />
     </Elements>
         
      

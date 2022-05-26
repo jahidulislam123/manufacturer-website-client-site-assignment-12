@@ -1,12 +1,43 @@
-import { async } from '@firebase/util';
-import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
-import React, { useState } from 'react';
 
-const CheckoutForm = () => {
+import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
+import React, { useEffect, useState } from 'react';
+
+const CheckoutForm = ({order}) => {
     const stripe =useStripe();
     const elements =useElements();
     const [cardError,setCardError]=useState('');
-    const handleSubmit = async (event) =>{
+    const [success,setSuccess]=useState('');
+    const [processing,setProcessing]=useState(false);
+    const [transactionId,setTransactionId]=useState('');
+
+    const {price,personName,_id, email}=order;
+    const  [clientSecret,setClientSecret]=useState('');
+
+    useEffect(()=>{
+      fetch('https://radiant-temple-88405.herokuapp.com/create-payment-intent',{
+        method :'POST',
+        headers:{
+          'content-type':'application/json',
+          'authorization' :`Bearer ${localStorage.getItem('accessToken')}`
+        },
+        body :JSON.stringify({price})
+
+      })
+      .then(res=>res.json())
+      .then(data=>{
+        if(data?.clientSecret){
+          setClientSecret(data.clientSecret)
+
+        }
+
+      })
+
+    },[price])
+
+
+
+
+    const handleSubmit = async(event) =>{
         event.preventDefault();
         if(!stripe || !elements){
             return;
@@ -21,12 +52,61 @@ const CheckoutForm = () => {
             card,
           });
 
+            setCardError(error?.message || '')
+            setSuccess(''); 
+            setProcessing(true);
 
-          if(error){
-            setCardError(error.message);
+          // if(error){
+          //   setCardError(error.message);
+          // }
+          // else{
+          //     setCardError('');
+          // }
+          
+
+          // confirm card payment 
+          const {paymentIntent, error:intentError} = await stripe.confirmCardPayment(
+            clientSecret,
+            {
+              payment_method: {
+                card: card,
+                billing_details: {
+                  name: personName,
+                  email: email
+                },
+              },
+            },
+          );
+
+          if(intentError){
+            setCardError(intentError?.message);
+            setProcessing(false);
           }
           else{
-              setCardError('');
+            setCardError('');
+            setTransactionId(paymentIntent.id);
+            console.log(paymentIntent);
+            setSuccess('Congratulation ! your payment is success')
+
+            //
+            const payment ={
+              order : _id,
+              transactionId :paymentIntent.id
+
+            }
+            fetch(`https://radiant-temple-88405.herokuapp.com/booking/${_id}`,{
+              method:'PATCH',
+              headers:{
+                'content-type':'application/json',
+                'authorization' :`Bearer ${localStorage.getItem('accessToken')}`
+              },
+              body :JSON.stringify(payment)
+              
+            }).then(res=>res.json())
+            .then(data=>{
+              setProcessing(false)
+              console.log(data);
+            })
           }
       
 
@@ -52,12 +132,18 @@ const CheckoutForm = () => {
             },
           }}
         />
-        <button className='my-3 btn btn-xs bg-primary rounded px-3 py-1 text-white font-bold' type="submit" disabled={!stripe}>
+        <button className='my-3 btn btn-xs bg-primary rounded px-3 py-1 text-white font-bold' type="submit" disabled={!stripe || !clientSecret }>
           Pay
         </button>
       </form>
       {
           cardError && <p className='text-red-500'>{cardError}</p>
+      }
+      {
+          success && <div
+            className='text-green-500'> <p>{success}</p>
+            <p>Your transction id is <span className='text-orange-500 font-bold'>{transactionId}</span> </p>
+          </div>
       }
         </>
     );
