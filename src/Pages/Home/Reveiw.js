@@ -2,7 +2,7 @@ import React from 'react';
 import { BeakerIcon } from '@heroicons/react/solid'
 const Reveiw = () => {
     return (
-        <div  className='bg-gradient-to-r mx-8 from-green-400 to-blue-500 hover:from-pink-500  rounded-box text-white'>
+        <div  className='ml-12 pl-12'>
            <div  className='grid my-5 mx-auto mx-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
            <div className="  ">
   <figure> 
@@ -11,8 +11,16 @@ const Reveiw = () => {
 </svg>
   </figure>
   <div className="card-body">
-    <h2 className="card-title">Features</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
+   
+   
+  
+  <div class="stat">
+    <div class="stat-title">Total Page Views</div>
+    <div class="stat-value">89,400 +</div>
+    <div class="stat-desc">21% more than last month</div>
+  </div>
+  
+
     
   </div>
 </div>
@@ -23,8 +31,15 @@ const Reveiw = () => {
 </svg>
   </figure>
   <div className="card-body">
-    <h2 className="card-title">Available</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
+    
+    <div class="stat">
+    <div class="stat-figure text-secondary">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+    </div>
+    <div class="stat-title">Page Views</div>
+    <div class="stat-value text-secondary">2.6M</div>
+    <div class="stat-desc">21% more than last month</div>
+  </div>
     
   </div>
 </div>
@@ -36,8 +51,11 @@ const Reveiw = () => {
 </svg>
   </figure>
   <div className="card-body">
-    <h2 className="card-title">Setup</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
+  <div class="stat place-items-center">
+    <div class="stat-title">Users</div>
+    <div class="stat-value text-secondary">4,200</div>
+    <div class="stat-desc text-secondary">↗︎ 40 (2%)</div>
+  </div>
     
   </div>
 </div>
@@ -50,8 +68,14 @@ const Reveiw = () => {
   <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
 </svg></figure>
   <div className="card-body">
-    <h2 className="card-title">Carefullness</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
+  <div class="stat">
+    <div class="stat-figure text-secondary">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+    </div>
+    <div class="stat-title">Downloads</div>
+    <div class="stat-value">31K</div>
+    <div class="stat-desc">Jan 1st - Feb 1st</div>
+  </div>
     
   </div>
 </div>
@@ -63,8 +87,16 @@ const Reveiw = () => {
 </svg>
   </figure>
   <div className="card-body">
-    <h2 className="card-title">Location</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
+  <div class="stat">
+    <div class="stat-figure text-secondary">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+    </div>
+    <div class="stat-title">New Registers</div>
+    <div class="stat-value">1,200</div>
+    <div class="stat-desc">↘︎ 90 (14%)</div>
+  </div>
+  
+
     
   </div>
 </div>
@@ -76,8 +108,14 @@ const Reveiw = () => {
       
       </figure>
   <div className="card-body">
-    <h2 className="card-title">Contact With Us</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
+  <div class="stat">
+    <div class="stat-figure text-primary">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+    </div>
+    <div class="stat-title">Total Likes</div>
+    <div class="stat-value text-primary">25.6K</div>
+    <div class="stat-desc">21% more than last month</div>
+  </div>
     
   </div>
 </div>

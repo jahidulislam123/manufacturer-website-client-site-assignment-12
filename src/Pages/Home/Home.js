@@ -10,8 +10,11 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
+            <h2 className='badge p-5  text-center  badge-primary   text-white text-2xl font-bold'>You can purchage below by booking</h2>
             <Tools></Tools>
             <AddedReview></AddedReview>
+            <h2 className='badge p-5 badge-primary   text-white text-2xl my-5 font-bold'>Get overall summary</h2>
+
             <Reveiw></Reveiw>
             <ExtraOne></ExtraOne>
             <Line></Line>
