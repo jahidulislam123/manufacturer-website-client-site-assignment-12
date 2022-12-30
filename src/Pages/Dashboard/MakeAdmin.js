@@ -5,7 +5,7 @@ import AdminRow from './AdminRow';
 
 const MakeAdmin = () => {
 
-    const {data:users,isLoading,refetch } = useQuery('users',()=>fetch('https://radiant-temple-88405.herokuapp.com/user',{
+    const {data:users,isLoading,refetch } = useQuery('users',()=>fetch('https://bicycle-server.vercel.app/user',{
       
         method :'GET',
         headers:{

@@ -28,7 +28,7 @@ const Purchase = ({parts,setParts}) => {
             price :price
  
         }
-        fetch('https://radiant-temple-88405.herokuapp.com/booking',{
+        fetch('https://bicycle-server.vercel.app/booking',{
             method :'POST',
             headers: {
                 'content-type':'application/json'

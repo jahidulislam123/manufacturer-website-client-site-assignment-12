@@ -11,7 +11,7 @@ const [parts,setParts]=useState(null);
 
     const [tools,setTools]=useState([]);
     useEffect(()=>{
-        fetch('https://radiant-temple-88405.herokuapp.com/tools')
+        fetch('https://bicycle-server.vercel.app/tools')
         .then(res=>res.json())
         .then(data=>setTools(data));
     },[])

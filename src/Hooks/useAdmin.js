@@ -7,7 +7,7 @@ const useAdmin =user =>{
     useEffect(()=>{
         const email = user?.email;
         if(email){
-            fetch(`https://radiant-temple-88405.herokuapp.com/admin/${email}`,{
+            fetch(`https://bicycle-server.vercel.app/admin/${email}`,{
            method:'GET',
            headers :{
                 'content-type':'application/json',

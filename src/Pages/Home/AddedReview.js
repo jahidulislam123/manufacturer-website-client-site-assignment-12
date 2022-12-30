@@ -6,7 +6,7 @@ const AddedReview = () => {
     const [review,setReview]=useState([]);
     const [user]=useAuthState(auth);
     useEffect(()=>{
-        fetch('https://radiant-temple-88405.herokuapp.com/review')
+        fetch('https://bicycle-server.vercel.app/review')
         .then(res=>res.json())
         .then(data=>setReview(data))
     },[])

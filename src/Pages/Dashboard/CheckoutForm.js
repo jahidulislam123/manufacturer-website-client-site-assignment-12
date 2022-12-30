@@ -14,7 +14,7 @@ const CheckoutForm = ({order}) => {
     const  [clientSecret,setClientSecret]=useState('');
 
     useEffect(()=>{
-      fetch('https://radiant-temple-88405.herokuapp.com/create-payment-intent',{
+      fetch('https://bicycle-server.vercel.app/create-payment-intent',{
         method :'POST',
         headers:{
           'content-type':'application/json',
@@ -94,7 +94,7 @@ const CheckoutForm = ({order}) => {
               transactionId :paymentIntent.id
 
             }
-            fetch(`https://radiant-temple-88405.herokuapp.com/booking/${_id}`,{
+            fetch(`https://bicycle-server.vercel.app/booking/${_id}`,{
               method:'PATCH',
               headers:{
                 'content-type':'application/json',

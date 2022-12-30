@@ -11,7 +11,7 @@ const MyOrder = () => {
     const navigate =useNavigate();
     useEffect(()=>{
       if(user){
-        fetch(`https://radiant-temple-88405.herokuapp.com/booking?email=${user.email}` ,{
+        fetch(`https://bicycle-server.vercel.app/booking?email=${user.email}` ,{
           method :'GET',
           headers:{
             'authorization':`Bearer ${localStorage.getItem('accessToken')}`
@@ -38,7 +38,7 @@ const MyOrder = () => {
     const handleDelete =id=>{
         const procced=window.confirm('Are you sure you want to delete ?');
         if(procced){
-            const url =`https://radiant-temple-88405.herokuapp.com/booking?amount=${id}`
+            const url =`https://bicycle-server.vercel.app/booking?amount=${id}`
             fetch(url,{
                 method : 'DELETE',
                 'content-type':'application/json'
@@ -86,7 +86,7 @@ const MyOrder = () => {
                   {(order.price && !order.paid)&&
                   <Link to={`/dashboard/payment/${order._id}`}><button class="btn font-bold btn-xs">pay</button></Link>}
                   {(order.price && order.paid)&&
-                  <div><button class="btn btn-secondary text-primary font-bold  btn-xs">paid</button>
+                  <div><button class="btn btn-secondary text-primaryn font-bold  btn-xs">paid</button>
                   <p>TransactionId: <br /> <span className='text-orange-500 font-bold'> {order.transaction}</span> </p>
                   </div>
 

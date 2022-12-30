@@ -5,7 +5,7 @@ import ManageOrderDelete from './ManageOrderDelete';
 const ManageOrders = () => {
     const [allorders,setAllorders]=useState([]);
     useEffect(()=>{
-        fetch('https://radiant-temple-88405.herokuapp.com/bookingss')
+        fetch('https://bicycle-server.vercel.app/bookingss')
         .then(res=>res.json())
         .then(data=>setAllorders(data));
     },[])
@@ -14,7 +14,7 @@ const ManageOrders = () => {
     const handleDelete=(id)=>{
         const procced=window.confirm('Are you sure you want to delete ?');
         if(procced){
-            const url =`https://radiant-temple-88405.herokuapp.com/booking?amount=${id}`
+            const url =`https://bicycle-server.vercel.app/booking?amount=${id}`
             fetch(url,{
                 method : 'DELETE',
                 'content-type':'application/json'
@@ -34,8 +34,6 @@ const ManageOrders = () => {
     return (
         <div>
             <h2>Show all orders and delete {allorders.length}</h2>
-
-           
             <div class="overflow-x-auto">
             <table class="table w-full">
    

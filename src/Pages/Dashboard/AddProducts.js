@@ -23,7 +23,7 @@ const AddProducts = () => {
 
 
         }
-        fetch('https://radiant-temple-88405.herokuapp.com/tools',{
+        fetch('https://bicycle-server.vercel.app/tools',{
                 method :'POST',
                 headers: {
                     'content-type':'application/json'
