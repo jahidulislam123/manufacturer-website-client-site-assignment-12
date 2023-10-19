@@ -14,7 +14,7 @@ const CheckoutForm = ({order}) => {
     const  [clientSecret,setClientSecret]=useState('');
 
     useEffect(()=>{
-      fetch('https://bicycle-server.vercel.app/create-payment-intent',{
+      fetch('https://manufacturer-website-server-site-assignment-12.vercel.app/create-payment-intent',{
         method :'POST',
         headers:{
           'content-type':'application/json',
@@ -94,7 +94,7 @@ const CheckoutForm = ({order}) => {
               transactionId :paymentIntent.id
 
             }
-            fetch(`https://bicycle-server.vercel.app/booking/${_id}`,{
+            fetch(`https://manufacturer-website-server-site-assignment-12.vercel.app/booking/${_id}`,{
               method:'PATCH',
               headers:{
                 'content-type':'application/json',

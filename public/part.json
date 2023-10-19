@@ -1,0 +1,165 @@
+[
+    {
+        "img ":"https://i.ibb.co/Js9sxn7/71-EX0-Xm-UJh-L-AC-UL320.jpg",
+        "name" :"Helmet",
+        "description": "A bicycle helmet is a protective headgear for cyclists. It typically consists of a hard outer shell, an impact-absorbing liner, adjustable straps, ventilation, and a retention system.",
+        "oldPrice":"6000",
+        "newPrice": "7000"
+
+    } ,
+    {
+        "img ":"https://i.ibb.co/cw1zv69/msg1986205353-18156.jpg",
+        "name" :"Grip",
+        "description": "Bicycle grips, often simply referred to as bike grips are the handlebar components that provide a comfortable and secure grip for the rider's hands while cycling. Grips are essential for control, comfort, and reducing hand fatigue during a ride.",
+        "oldPrice":"400",
+        "newPrice": "350"
+
+    } ,
+    {
+        "img ":"hhttps://i.ibb.co/qy5PDbq/41zv-P55-Gf-LL-AC-UL320.jpg",
+        "name" :"Mudgaurd",
+        "description": "Mudguards, also known as fenders, are protective devices attached to bicycles to prevent water, mud, and debris from being thrown up onto the rider and the bicycle itself.",
+        "oldPrice":"900",
+        "newPrice": "800"
+
+    } ,
+    {
+        "img ":"https://i.ibb.co/N1P1CVZ/612-YEi65-Xl-S-AC-UL320.jpg",
+        "name" :"SpeedoMeter",
+        "description": "A speedometer, often referred to as a speed meter, is a device or instrument used to measure and display the current speed of a vehicle, such as a car, motorcycle, bicycle, or boat. It is an essential component of the vehicle's dashboard or instrument cluster and provides real-time information about how fast the vehicle is traveling.",
+        "oldPrice":"2000",
+        "newPrice": "1500"
+
+    } ,
+    {
+        "img ":"https://i.ibb.co/0MnGMmt/61xnw-Fj-I3-EL-AC-UL320.jpg",
+        "name" :"FrameBag",
+        "description": "A bag is a flexible container typically made of fabric, leather, plastic, or other materials, used for carrying and storing various items. Bags come in a wide variety of sizes, styles, and designs, and they serve a multitude of purposes. ",
+        "oldPrice":"3000",
+        "newPrice": "2800"
+
+    } ,
+    {
+        "img ":"https://i.ibb.co/VSxnM23/81nv-DJ9c6-AL-AC-UL320.jpg",
+        "name" :"Lock",
+        "description": "A cycle lock, also known as a bike lock, is a security device designed to prevent the theft of bicycles. These locks are used to secure bicycles to fixed objects like bike racks, poles, or railings. There are various types of cycle locks, each with its own advantages and disadvantages. ",
+        "oldPrice":"400",
+        "newPrice": "500"
+
+    } ,
+    {
+        "img ":"https://i.ibb.co/88BY1qj/msg1986205353-18126.jpg",
+        "name" :"Tire",
+        "description": "A tire, often spelled as  in some regions, is a vital component of a vehicle that provides the necessary traction and support for movement. Tires are primarily used on various types of vehicles, such as automobiles, motorcycles, bicycles, and even industrial equipment. ",
+        "oldPrice":"2100",
+        "newPrice": "1800"
+
+    } ,
+    {
+        "img ":"https://i.ibb.co/wR2gGcj/msg1986205353-18127.jpg",
+        "name" :"HydraulicBrake",
+        "description": "Hydraulic bicycle brakes, often referred to as hydraulic disc brakes, are a type of braking system used on bicycles that utilize hydraulic fluid to transmit force from the brake lever to the brake caliper. ",
+        "oldPrice":"3500",
+        "newPrice": "3000"
+
+    } ,
+    {
+        "img ":"https://i.ibb.co/Js9sxn7/71-EX0-Xm-UJh-L-AC-UL320.jpg",
+        "name" :"Helmets",
+        "description": "A bicycle helmet is a protective headgear for cyclists. It typically consists of a hard outer shell, an impact-absorbing liner, adjustable straps, ventilation, and a retention system.",
+        "oldPrice":"6000",
+        "newPrice": "7000"
+
+    } ,
+    {
+        "img ":"https://i.ibb.co/VVg3wZD/msg1986205353-18130.jpg",
+        "name" :"Padel",
+        "description": "It appears that you're asking about , which is likely referring to a sport called , often spelled as  in English-speaking countries. Pádel is a racquet sport that combines elements of tennis and squash. ",
+        "oldPrice":"1300",
+        "newPrice": "1200"
+
+    } ,
+    {
+        "img ":"ttps://i.ibb.co/V2kPpFn/msg1986205353-18125.jpg",
+        "name" :"Suspension",
+        "description": "Suspension, in the context of vehicles and mechanical systems, refers to a system of springs, shock absorbers, and linkages that connects a vehicle's wheels to its chassis or body. The primary purpose of a suspension system is to provide a comfortable and controlled ride, as well as to maintain proper tire contact with the road surface, especially on uneven or rough terrain.",
+        "oldPrice":"1900",
+        "newPrice": "1200"
+
+    } ,
+    {
+        "img ":"https://i.ibb.co/CPNfXJ4/msg1986205353-18131.jpg ",
+        "name" :"Brake",
+        "description": "Brakes are a crucial component in any vehicle, and they are responsible for slowing down or stopping the vehicle's motion. They work by converting kinetic energy (the energy of motion) into thermal energy (heat), thus reducing the speed of the vehicle. ",
+        "oldPrice":"1000",
+        "newPrice": "900"
+
+    } ,
+    
+    {
+        "img ":"https://i.ibb.co/prytnNB/msg1986205353-18150.jpg ",
+        "name" :"Saddle",
+        "description": "In the context of bicycles, the term refers to the seat or the part of the bicycle where the rider sits. The saddle is an essential component of a bicycle, as it plays a significant role in rider comfort and positioning. ",
+        "oldPrice":"1000",
+        "newPrice": "1100"
+
+    } ,
+    {
+        "img ":"https://i.ibb.co/VwnxyZp/msg1986205353-18154.jpg",
+        "name" :"WaterBottle",
+        "description": "A water bottle for a bicycle, often referred to as a or is a container designed to carry and dispense water or other beverages while cycling. Staying hydrated during a bike ride is essential, and water bottles specifically designed for bicycles make it convenient for cyclists to access liquids without stopping.",
+        "oldPrice":"700",
+        "newPrice": "600"
+
+    } ,
+    {
+        "img ":"https://i.ibb.co/nzYdk5R/msg1986205353-18152.jpg",
+        "name" :"Rim",
+        "description": "In the context of bicycles, a  refers to the outer, circular part of a bicycle wheel. The rim plays a crucial role in supporting the tire, providing a mounting point for the spokes, and ensuring the overall strength and durability of the wheel.",
+        "oldPrice":"1700",
+        "newPrice": "1500"
+
+    } ,
+    {
+        "img ":"https://i.ibb.co/nzYdk5R/msg1986205353-18152.jpg",
+        "name" :"Frame",
+        "description": "The bicycle frame is the central structural component of a bicycle, serving as the backbone that connects various other parts, including the wheels, fork, handlebars, saddle, and drivetrain. The frame plays a pivotal role in determining a bike's strength, geometry, style, and overall ride characteristics.",
+        "oldPrice":"4500",
+        "newPrice": "4400"
+
+    } ,
+    {
+        "img ":"https://i.ibb.co/wNfbV3B/msg1986205353-18151-1.jpg",
+        "name" :"RainCoat",
+        "description": "A raincoat for cycling, often referred to as a cycling rain jacket or bike raincoat is a specialized piece of clothing designed to protect cyclists from rain and inclement weather while riding. These raincoats are tailored to the specific needs of cyclists, offering features that enhance comfort, visibility, and mobility during wet conditions. ",
+        "oldPrice":"1200",
+        "newPrice": "1000"
+
+    } ,
+    {
+        "img ":"https://i.ibb.co/GWg2tLM/msg1986205353-18128.jpg",
+        "name" :"Hub",
+        "description": "In the context of bicycles, a cycle hub typically refers to the hub of a bicycle wheel. The hub is the central component that connects the wheel's rim, spokes, and axle. It plays a vital role in the overall functionality and performance of the wheel.",
+        "oldPrice":"1500",
+        "newPrice": "800"
+
+    } ,
+    {
+        "img ":"https://i.ibb.co/fdLSPnd/71a-KIt-Z9-MUL-AC-UL320.jpg",
+        "name" :"Pump",
+        "description": "A cycle hand pump, often referred to simply as a bicycle hand pump, is a portable and manual air pump designed specifically for inflating bicycle tires. These pumps are an essential accessory for cyclists as they allow riders to maintain proper tire pressure, ensuring a safe and comfortable riding experience.",
+        "oldPrice":"1300",
+        "newPrice": "1200"
+
+    } ,
+    {
+        "img ":"https://i.ibb.co/VY0drxq/msg1986205353-18129.jpg",
+        "name" :"Hub",
+        "description": "a bicycle hub is the central component of a bicycle wheel, located at the center of the wheel and attached to the bicycle's frame via an axle. It contains bearings and is where the spokes are attached to the wheel rim. ",
+        "oldPrice":"1300",
+        "newPrice": "1200"
+
+    } 
+    
+
+]

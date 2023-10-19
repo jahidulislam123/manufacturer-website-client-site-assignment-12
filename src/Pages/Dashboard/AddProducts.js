@@ -23,7 +23,7 @@ const AddProducts = () => {
 
 
         }
-        fetch('https://bicycle-server.vercel.app/tools',{
+        fetch('https://manufacturer-website-server-site-assignment-12.vercel.app/tools',{
                 method :'POST',
                 headers: {
                     'content-type':'application/json'

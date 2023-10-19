@@ -6,7 +6,7 @@ const AddedReview = () => {
     const [review,setReview]=useState([]);
     const [user]=useAuthState(auth);
     useEffect(()=>{
-        fetch('https://bicycle-server.vercel.app/review')
+        fetch('https://manufacturer-website-server-site-assignment-12.vercel.app/review')
         .then(res=>res.json())
         .then(data=>setReview(data))
     },[])

@@ -11,7 +11,7 @@ const [parts,setParts]=useState(null);
 
     const [tools,setTools]=useState([]);
     useEffect(()=>{
-        fetch('https://bicycle-server.vercel.app/tools')
+        fetch('https://manufacturer-website-server-site-assignment-12.vercel.app/tools')
         .then(res=>res.json())
         .then(data=>setTools(data));
     },[])

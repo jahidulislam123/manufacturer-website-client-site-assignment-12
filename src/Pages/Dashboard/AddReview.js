@@ -22,7 +22,7 @@ const AddReview = () => {
                 text : two
 
             }
-            fetch('https://bicycle-server.vercel.app/review',{
+            fetch('https://manufacturer-website-server-site-assignment-12.vercel.app/review',{
                 method :'POST',
                 headers: {
                     'content-type':'application/json'

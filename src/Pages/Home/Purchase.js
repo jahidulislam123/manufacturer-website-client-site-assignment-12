@@ -28,7 +28,7 @@ const Purchase = ({parts,setParts}) => {
             price :price
  
         }
-        fetch('https://bicycle-server.vercel.app/booking',{
+        fetch('https://manufacturer-website-server-site-assignment-12.vercel.app/booking',{
             method :'POST',
             headers: {
                 'content-type':'application/json'

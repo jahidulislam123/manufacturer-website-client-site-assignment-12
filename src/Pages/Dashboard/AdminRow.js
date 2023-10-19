@@ -11,7 +11,7 @@ const AdminRow = ({user,refetch}) => {
   
   const {email,role}=user;
   const makeAdmin =()=>{
-    fetch(`https://bicycle-server.vercel.app/user/admin/${email}`,{
+    fetch(`https://manufacturer-website-server-site-assignment-12.vercel.app/user/admin/${email}`,{
       method :'PUT',
       headers:{
         authorization :`Bearer ${localStorage.getItem('accessToken')}`
@@ -34,11 +34,11 @@ const AdminRow = ({user,refetch}) => {
 
 
 
-//https://bicycle-server.vercel.app/
+//https://manufacturer-website-server-site-assignment-12.vercel.app/
 const handleDelete=(id)=>{
   const procced=window.confirm('Are you sure you want to delete ?');
   if(procced){
-      const url =`https://bicycle-server.vercel.app/user?amount=${id}`
+      const url =`https://manufacturer-website-server-site-assignment-12.vercel.app/user?amount=${id}`
       fetch(url,{
           method : 'DELETE',
           'content-type':'application/json'

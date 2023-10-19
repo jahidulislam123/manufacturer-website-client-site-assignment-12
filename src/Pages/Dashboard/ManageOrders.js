@@ -5,7 +5,7 @@ import ManageOrderDelete from './ManageOrderDelete';
 const ManageOrders = () => {
     const [allorders,setAllorders]=useState([]);
     useEffect(()=>{
-        fetch('https://bicycle-server.vercel.app/bookingss')
+        fetch('https://manufacturer-website-server-site-assignment-12.vercel.app/bookingss')
         .then(res=>res.json())
         .then(data=>setAllorders(data));
     },[])
@@ -14,7 +14,7 @@ const ManageOrders = () => {
     const handleDelete=(id)=>{
         const procced=window.confirm('Are you sure you want to delete ?');
         if(procced){
-            const url =`https://bicycle-server.vercel.app/booking?amount=${id}`
+            const url =`https://manufacturer-website-server-site-assignment-12.vercel.app/booking?amount=${id}`
             fetch(url,{
                 method : 'DELETE',
                 'content-type':'application/json'

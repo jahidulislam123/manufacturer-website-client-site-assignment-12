@@ -5,7 +5,7 @@ import AdminRow from './AdminRow';
 
 const MakeAdmin = () => {
 
-    const {data:users,isLoading,refetch } = useQuery('users',()=>fetch('https://bicycle-server.vercel.app/user',{
+    const {data:users,isLoading,refetch } = useQuery('users',()=>fetch('https://manufacturer-website-server-site-assignment-12.vercel.app/user',{
       
         method :'GET',
         headers:{

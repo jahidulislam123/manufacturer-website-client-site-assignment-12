@@ -5,7 +5,7 @@ const ManageProducts = () => {
     
     const [alltools,setAllTools]=useState([]);
     useEffect(()=>{
-        fetch('https://bicycle-server.vercel.app/tools')
+        fetch('https://manufacturer-website-server-site-assignment-12.vercel.app/tools')
         .then(res=>res.json())
         .then(data=>setAllTools(data));
     },[])
@@ -14,7 +14,7 @@ const ManageProducts = () => {
     const handleDelete=(id)=>{
         const procced=window.confirm('Are you sure you want to delete ?');
         if(procced){
-            const url =`https://bicycle-server.vercel.app/deleted?amount=${id}`
+            const url =`https://manufacturer-website-server-site-assignment-12.vercel.app/deleted?amount=${id}`
             fetch(url,{
                 method : 'DELETE',
                 'content-type':'application/json'

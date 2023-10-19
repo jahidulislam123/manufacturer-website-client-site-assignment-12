@@ -11,7 +11,7 @@ const MyOrder = () => {
     const navigate =useNavigate();
     useEffect(()=>{
       if(user){
-        fetch(`https://bicycle-server.vercel.app/booking?email=${user.email}` ,{
+        fetch(`https://manufacturer-website-server-site-assignment-12.vercel.app/booking?email=${user.email}` ,{
           method :'GET',
           headers:{
             'authorization':`Bearer ${localStorage.getItem('accessToken')}`
@@ -38,7 +38,7 @@ const MyOrder = () => {
     const handleDelete =id=>{
         const procced=window.confirm('Are you sure you want to delete ?');
         if(procced){
-            const url =`https://bicycle-server.vercel.app/booking?amount=${id}`
+            const url =`https://manufacturer-website-server-site-assignment-12.vercel.app/booking?amount=${id}`
             fetch(url,{
                 method : 'DELETE',
                 'content-type':'application/json'
