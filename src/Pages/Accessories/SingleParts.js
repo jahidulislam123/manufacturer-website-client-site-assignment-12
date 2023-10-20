@@ -11,6 +11,7 @@ const SingleParts = ({ accessories, setAccessories }) => {
       <div class="text-left px-10">
         {" "}
         <strong>{details}</strong> <br></br>
+        <strong class="text-cyan-400">{name}</strong> <br></br>
         <s>$ {oldPrice}</s> <br></br>
         <strong class="text-rose-600 text-2xl">${newPrice}</strong>
         <div class="flex ">
