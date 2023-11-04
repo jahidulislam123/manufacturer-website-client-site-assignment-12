@@ -1,8 +1,16 @@
 import React from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const SingleParts = ({ accessories, setAccessories }) => {
   const { _id, name, img, description, oldPrice, newPrice } = accessories;
   const details = description.slice(0, 50);
+
+  const navigate = useNavigate();
+
+  const navigateToPartDetails = (_id) => {
+    navigate(`/partDetails/${_id}`);
+  };
+
   return (
     <div class="card relative w-64 bg-base-100 shadow-xl">
       <figure class="px-10 pt-2 pb-2">
@@ -23,7 +31,10 @@ const SingleParts = ({ accessories, setAccessories }) => {
         </div>
         <br></br> <br></br>
         <div>
-          <button class="btn absolute btn-neutral btn-sm font-bold w-full bottom-0 ">
+          <button
+            onClick={() => navigateToPartDetails(_id)}
+            class="btn absolute btn-neutral btn-sm font-bold w-full bottom-0 "
+          >
             Details
           </button>
         </div>

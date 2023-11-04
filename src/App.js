@@ -24,6 +24,7 @@ import MyProfile from "./Pages/Dashboard/MyProfile";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import Accessories from "./Pages/Accessories/Accessories";
 import Contact from "./Pages/Contact/Contact";
+import PartDetails from "./Pages/Accessories/PartDetails";
 
 function App() {
   return (
@@ -75,6 +76,11 @@ function App() {
           ></Route>
         </Route>
         <Route path="/*" element={<NotFound></NotFound>}></Route>
+
+        <Route
+          path="/partDetails/:partDetailsID"
+          element={<PartDetails></PartDetails>}
+        ></Route>
       </Routes>
 
       <Footer></Footer>
